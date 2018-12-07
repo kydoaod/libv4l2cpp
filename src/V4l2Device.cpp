@@ -15,8 +15,11 @@
 #include <fcntl.h>
 
 // libv4l2
-//#include <linux/videodev2.h>
+#ifdef ANDROID_COMPILE
 #include <sys/time.h>
+#endif
+#include <linux/videodev2.h>
+
 #include "logger.h"
 
 #include "V4l2Device.h"

@@ -17,7 +17,11 @@
 #include <sys/ioctl.h>
 
 // libv4l2
+#ifdef ANDROID_COMPILE
+#include <sys/time.h>
+#else
 #include <linux/videodev2.h>
+#endif
 
 // project
 #include "logger.h"
