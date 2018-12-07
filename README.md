@@ -2,7 +2,7 @@
 libv4l2cpp
 ====================
 
-It is a C++ wrapper for V4L2
+It is a C++ wrapper for V4L2 with android toolchain support
 
 Dependencies
 ------------
