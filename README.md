@@ -2,11 +2,15 @@
 libv4l2cpp
 ====================
 
-It is a C++ wrapper for V4L2 with android toolchain support
+It is a C++ wrapper for V4L2
+
+License
+------------
+Domain public 
 
 Dependencies
 ------------
- - liblog4cpp5-dev (optional)
+ - liblog4cpp5-dev
  
 V4L2 Capture
 -------------

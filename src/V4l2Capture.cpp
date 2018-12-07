@@ -11,8 +11,8 @@
 
 
 // libv4l2
-#include <linux/videodev2.h>
-
+//#include <linux/videodev2.h>
+#include <sys/time.h>
 // project
 #include "logger.h"
 #include "V4l2Capture.h"

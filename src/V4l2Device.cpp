@@ -15,8 +15,8 @@
 #include <fcntl.h>
 
 // libv4l2
-#include <linux/videodev2.h>
-
+//#include <linux/videodev2.h>
+#include <sys/time.h>
 #include "logger.h"
 
 #include "V4l2Device.h"

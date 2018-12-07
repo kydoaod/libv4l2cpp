@@ -1,8 +1,8 @@
 CFLAGS = -W -Wall -pthread -g -pipe $(CFLAGS_EXTRA)
 CFLAGS += -I inc
 RM = rm -rf
-CC = $(CROSS)gcc
-AR = $(CROSS)ar
+CC = arm-linux-androideabi-gcc
+AR = arm-linux-androideabi-ar
 PREFIX?=/usr
 
 ifneq ($(wildcard $(SYSROOT)$(PREFIX)/include/log4cpp/Category.hh),)
@@ -27,7 +27,6 @@ clean:
 	-@$(RM) *.a $(V4L2WRAPPER_OBJ)
 
 install:
-	mkdir $(PREFIX)/include/libv4l2cpp/
 	install -D -m 0755 inc/*.h $(PREFIX)/include/libv4l2cpp/
 	install -D -m 0755 *.a $(PREFIX)/lib
 
